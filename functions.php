@@ -175,6 +175,26 @@ function lermars_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lermars_scripts' );
 
+function create_post_objects(){
+    register_post_type('objects',
+
+        array(
+                'labels' => array(
+                    'name' => ( 'Объекты' ),
+					'singular_name' => ( 'Objects' ),
+                    'add_new' => 'Добавить новый'
+                ),
+            'menu_position' => 9,
+            'public' => true,
+            'has_archive' => true,
+            'menu_icon'   => 'dashicons-building',
+			'hierarchical'  => false,
+            'supports' => array('title','editor')
+        )
+    );
+}
+add_action( 'init', 'create_post_objects' );
+
 /**
  * Implement the Custom Header feature.
  */

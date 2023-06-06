@@ -12,7 +12,7 @@
                             <a class="footer__menu__list__link" href="<?php echo get_page_link(36)?>">О компании</a>
                         </li>
                         <li class="footer__menu__list">
-                            <a class="footer__menu__list__link" href="<?php echo get_page_link()?>">Объекты</a>
+                            <a class="footer__menu__list__link" href="<?php echo site_url(); ?>/objects/">Объекты</a>
                         </li>
                         <li class="footer__menu__list">
                             <a class="footer__menu__list__link" href="<?php echo get_page_link()?>">Услуги</a>

@@ -31,7 +31,7 @@
                                 <a class="header__menu__link" href="<?php echo get_page_link()?>">Услуги</a>
                             </li>
                             <li class="header--single__list__items">
-                                <a class="header__menu__link" href="<?php echo get_page_link()?>">Объекты</a>
+                                <a class="header__menu__link" href="<?php echo site_url(); ?>/objects/">Объекты</a>
                             </li>
                             <li class="header--single__list__items">
                                 <a class="header__menu__link" href="<?php echo get_page_link(8)?>">Контакты</a>
@@ -48,7 +48,10 @@
             </div>
             <div class="breadcrumbs">
                 <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs('-'); ?>
-                <h1><?php single_post_title();  if(is_404()): echo 'Страница не найдена';endif;?></h1>
+                <h1><?php single_post_title();  
+                    if(is_404()): echo 'Страница не найдена';endif;
+                    if( is_post_type_archive() ) : wp_title("", true);endif?>
+                </h1>
             </div>
         </div>
     </header>

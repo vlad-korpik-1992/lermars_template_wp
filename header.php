@@ -28,7 +28,7 @@
                             <a class="header__menu__link" href="<?php echo get_page_link()?>">Услуги</a>
                         </li>
                         <li class="header__menu__list__items">
-                            <a class="header__menu__link" href="<?php echo get_page_link()?>">Объекты</a>
+                            <a class="header__menu__link" href="<?php echo site_url(); ?>/objects/">Объекты</a>
                         </li>
                         <li class="header__menu__list__items">
                             <a class="header__menu__link" href="<?php echo get_page_link(8)?>">Контакты</a>

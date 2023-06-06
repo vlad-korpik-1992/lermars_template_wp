@@ -1269,6 +1269,11 @@ section{
     max-width: 1920px;
     margin: 0 auto;
 }
+.work--objects{
+    margin-top: -40px;
+    padding-top: 0;
+    background: #fff;
+}
 .work h2{
     display: block;
     font-family: 'Gotham';
@@ -1710,6 +1715,9 @@ section{
     .perion__box__items__desc__box__items:first-child{
         flex: 1;
         max-width: 55px;
+    }
+    .work--objects{
+        margin-top: -30px;
     }
     .footer__box{
         grid-template-columns: 20% auto 25%;
@@ -2195,6 +2203,9 @@ section{
     .partners h2{
         font-size: 40px;
     }
+    .work--objects .work__box{
+        border-top: none;
+    }
 }
 @media (max-width: 575px){
     .header__box__link{
@@ -2303,6 +2314,9 @@ section{
     .stats__box__items{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .work--objects{
+        margin-top: -15px;
     }
     .footer__box__items:nth-child(2n){
         display: none;
